@@ -1,0 +1,25 @@
+### POST Membuat Post Baru
+POST http://localhost:8000/posts HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "My First Post",
+  "content": "This is the content of the post."
+}
+
+### GET Semua Post
+GET http://localhost:8000/posts HTTP/1.1
+Content-Type: application/json
+
+### PUT Memperbarui Post
+PUT http://localhost:8000/posts/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Updated Title",
+  "content": "Updated content."
+}
+
+### DELETE Menghapus Post
+DELETE http://localhost:8000/posts/1 HTTP/1.1
+Content-Type: application/json
